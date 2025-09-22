@@ -1,0 +1,395 @@
+<html lang="en">
+ <head>
+
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Man
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+    }
+    /* Hide scrollbar for horizontal scroll containers */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+ </head>
+
+ <body class="bg-gray-900 text-white min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="flex items-center justify-between px-4 py-3 bg-gray-900 fixed top-0 left-0 right-0 z-50 border-b border-gray-700">
+   <div class="flex items-center space-x-4">
+    <img alt="JioCinema logo in red background with white text" class="h-10 w-auto" height="40" src="https://i.pinimg.com/originals/05/ae/11/05ae111dc506a36ca09d52deaabf5a52.jpg" width="100"/>
+    <nav class="hidden md:flex space-x-6 font-semibold text-gray-300">
+     <a class="hover:text-white transition" href="#">
+      Home
+     </a>
+     <a class="hover:text-white transition" href="#">
+      Movies
+     </a>
+    <a href="bigboss.html" class="hover:text-white transition">
+  TV Shows
+</a>
+
+     <a class="hover:text-white transition" href="#">
+      Web Series
+     </a>
+     <a class="hover:text-white transition" href="#">
+      Kids
+     </a>
+     <a class="hover:text-white transition" href="#">
+      Music
+     </a>
+    </nav>
+   </div>
+   <div class="flex items-center space-x-4">
+    <button aria-label="Search" class="text-gray-300 hover:text-white transition text-xl md:text-2xl">
+     <i class="fas fa-search">
+     </i>
+    </button>
+    <button aria-label="User Profile" class="text-gray-300 hover:text-white transition text-xl md:text-2xl">
+     <i class="fas fa-user-circle">
+     </i>
+    </button>
+   </div>
+  </header>
+  <!-- Main content -->
+  <main class="pt-16 flex-grow overflow-y-auto">
+   <!-- Hero Carousel -->
+   <section class="relative w-full overflow-hidden">
+<div class="relative h-56 sm:h-72 md:h-96 lg:h-[28rem]">
+  <!-- Background video -->
+  <video autoplay muted loop controls class="absolute top-0 left-0 w-full h-full object-cover z-0"  width="320" height="240">
+    <source src="bloodlie.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Content overlay -->
+  <div class="absolute bottom-8 left-6 max-w-xl bg-gradient-to-t from-black/80 to-transparent p-4 rounded-md z-10">
+    <h2 class="text-3xl font-bold mb-2 text-white">
+      Final Destination - Bloodline
+    </h2>
+    <p class="text-gray-300 text-sm sm:text-base">
+      An epic adventure of courage and friendship in a world beyond imagination.
+    </p>
+  </div>
+</div>
+
+      <button class="mt-4 bg-red-600 hover:bg-red-700 px-5 py-2 rounded font-semibold transition">
+       Watch Now
+      </button>
+     </div>
+    </div>
+   </section>
+   <!-- Categories Horizontal Scroll -->
+   <section class="mt-6 px-4">
+    <h3 class="text-xl font-semibold mb-3">
+     Categories
+    </h3>
+    <div class="flex space-x-4 overflow-x-auto no-scrollbar pb-2">
+     <div class="flex-shrink-0 w-24 sm:w-28 md:w-32 cursor-pointer">
+      <img alt="Category icon for Action movies with red background and white text" class="rounded-lg object-cover w-full h-24 sm:h-28 md:h-32" height="128" src="https://storage.googleapis.com/a1aa/image/46bc1c64-dc12-4d0d-3516-48d3e5bd4711.jpg" width="128"/>
+      <p class="mt-1 text-center text-sm font-medium">
+       Action
+      </p>
+     </div>
+     <div class="flex-shrink-0 w-24 sm:w-28 md:w-32 cursor-pointer">
+      <img alt="Category icon for Drama movies with blue background and white text" class="rounded-lg object-cover w-full h-24 sm:h-28 md:h-32" height="128" src="https://storage.googleapis.com/a1aa/image/b806c270-0d36-40c5-14f0-c92dd6e3b273.jpg" width="128"/>
+      <p class="mt-1 text-center text-sm font-medium">
+       Drama
+      </p>
+     </div>
+     <div class="flex-shrink-0 w-24 sm:w-28 md:w-32 cursor-pointer">
+      <img alt="Category icon for Comedy movies with amber background and white text" class="rounded-lg object-cover w-full h-24 sm:h-28 md:h-32" height="128" src="https://storage.googleapis.com/a1aa/image/5936611c-42af-470b-d124-30a8e1f8cd1d.jpg" width="128"/>
+      <p class="mt-1 text-center text-sm font-medium">
+       Comedy
+      </p>
+     </div>
+     <div class="flex-shrink-0 w-24 sm:w-28 md:w-32 cursor-pointer">
+      <img alt="Category icon for Romance movies with emerald green background and white text" class="rounded-lg object-cover w-full h-24 sm:h-28 md:h-32" height="128" src="https://storage.googleapis.com/a1aa/image/7131785e-ff69-4991-6ceb-1557f62d6a9e.jpg" width="128"/>
+      <p class="mt-1 text-center text-sm font-medium">
+       Romance
+      </p>
+     </div>
+     <div class="flex-shrink-0 w-24 sm:w-28 md:w-32 cursor-pointer">
+      <img alt="Category icon for Thriller movies with violet background and white text" class="rounded-lg object-cover w-full h-24 sm:h-28 md:h-32" height="128" src="https://storage.googleapis.com/a1aa/image/2382cb66-2956-45a6-55fb-6618b194e0ad.jpg" width="128"/>
+      <p class="mt-1 text-center text-sm font-medium">
+       Thriller
+      </p>
+     </div>
+     <div class="flex-shrink-0 w-24 sm:w-28 md:w-32 cursor-pointer">
+      <img alt="Category icon for Horror movies with pinkish red background and white text" class="rounded-lg object-cover w-full h-24 sm:h-28 md:h-32" height="128" src="https://storage.googleapis.com/a1aa/image/916a4cbe-25b0-4ee1-518d-5b2c33e7e724.jpg" width="128"/>
+      <p class="mt-1 text-center text-sm font-medium">
+       Horror
+      </p>
+     </div>
+     <div class="flex-shrink-0 w-24 sm:w-28 md:w-32 cursor-pointer">
+      <img alt="Category icon for Kids movies with teal background and white text" class="rounded-lg object-cover w-full h-24 sm:h-28 md:h-32" height="128" src="https://storage.googleapis.com/a1aa/image/9d29e182-cd24-4979-025a-dfd9028d5b27.jpg" width="128"/>
+      <p class="mt-1 text-center text-sm font-medium">
+       Kids
+      </p>
+     </div>
+    </div>
+   </section>
+   <!-- Trending Now Section -->
+   <section class="mt-8 px-4">
+    <h3 class="text-xl font-semibold mb-3">
+     Trending Now
+    </h3>
+    <div class="flex space-x-4 overflow-x-auto no-scrollbar pb-2">
+     <div class="flex-shrink-0 w-40 sm:w-48 md:w-52 cursor-pointer rounded-lg overflow-hidden shadow-lg bg-gray-800">
+      <img alt="Trending movie 1 poster showing a futuristic cityscape with a lone hero standing on a rooftop at night" class="w-full h-24 sm:h-28 md:h-32 object-cover" height="180" src="https://storage.googleapis.com/a1aa/image/46bdc692-1bce-4087-fda5-6455b7918b95.jpg" width="320"/>
+      <div class="p-2">
+       <h4 class="text-sm font-semibold truncate">
+        The Last Horizon
+       </h4>
+       <p class="text-xs text-gray-400">
+        Sci-Fi, Adventure
+       </p>
+      </div>
+     </div>
+     <div class="flex-shrink-0 w-40 sm:w-48 md:w-52 cursor-pointer rounded-lg overflow-hidden shadow-lg bg-gray-800">
+      <img alt="Trending movie 2 poster showing a dramatic close-up of a woman with tears and rain drops" class="w-full h-24 sm:h-28 md:h-32 object-cover" height="180" src="https://storage.googleapis.com/a1aa/image/f8eae670-1ee3-4757-4dd0-a2a98332c6ea.jpg" width="320"/>
+      <div class="p-2">
+       <h4 class="text-sm font-semibold truncate">
+        Tears of the Storm
+       </h4>
+       <p class="text-xs text-gray-400">
+        Drama, Romance
+       </p>
+      </div>
+     </div>
+     <div class="flex-shrink-0 w-40 sm:w-48 md:w-52 cursor-pointer rounded-lg overflow-hidden shadow-lg bg-gray-800">
+      <img alt="Trending movie 3 poster showing a group of friends laughing and having fun at a beach party during sunset" class="w-full h-24 sm:h-28 md:h-32 object-cover" height="180" src="https://storage.googleapis.com/a1aa/image/f1bce12b-3867-4c09-1f02-8e9954100b98.jpg" width="320"/>
+      <div class="p-2">
+       <h4 class="text-sm font-semibold truncate">
+        Sunset Vibes
+       </h4>
+       <p class="text-xs text-gray-400">
+        Comedy, Drama
+       </p>
+      </div>
+     </div>
+     <div class="flex-shrink-0 w-40 sm:w-48 md:w-52 cursor-pointer rounded-lg overflow-hidden shadow-lg bg-gray-800">
+      <img alt="Trending movie 4 poster showing a romantic couple holding hands in a lush green park with sunlight filtering through trees" class="w-full h-24 sm:h-28 md:h-32 object-cover" height="180" src="https://storage.googleapis.com/a1aa/image/954b7206-bc56-4075-6d81-bc24b5abe022.jpg" width="320"/>
+      <div class="p-2">
+       <h4 class="text-sm font-semibold truncate">
+        Love in Bloom
+       </h4>
+       <p class="text-xs text-gray-400">
+        Romance
+       </p>
+      </div>
+     </div>
+     <div class="flex-shrink-0 w-40 sm:w-48 md:w-52 cursor-pointer rounded-lg overflow-hidden shadow-lg bg-gray-800">
+      <img alt="Trending movie 5 poster showing a mysterious figure in a dark alley with neon lights and fog" class="w-full h-24 sm:h-28 md:h-32 object-cover" height="180" src="https://storage.googleapis.com/a1aa/image/c6094b8b-4d70-4f37-80ce-f452c66e47a6.jpg" width="320"/>
+      <div class="p-2">
+       <h4 class="text-sm font-semibold truncate">
+        Neon Shadows
+       </h4>
+       <p class="text-xs text-gray-400">
+        Thriller, Mystery
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Web Series Section -->
+   <section class="mt-8 px-4">
+    <h3 class="text-xl font-semibold mb-3">
+     Web Series
+    </h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+     <div class="cursor-pointer rounded-lg overflow-hidden shadow-lg bg-gray-800">
+      <img alt="Web series 1 poster showing a group of detectives in a dimly lit room with maps and clues on the wall" class="w-full h-40 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/9e1ec880-c476-47ea-68de-8393b23fd3a0.jpg" width="400"/>
+      <div class="p-2">
+       <h4 class="text-sm font-semibold truncate">
+        Detective Chronicles
+       </h4>
+       <p class="text-xs text-gray-400">
+        Crime, Mystery
+       </p>
+      </div>
+     </div>
+     <div class="cursor-pointer rounded-lg overflow-hidden shadow-lg bg-gray-800">
+      <img alt="Web series 2 poster showing a young woman standing on a rooftop overlooking a city skyline at sunset" class="w-full h-40 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/a316376e-58ef-4b21-ae6c-24f6dd7fe0c9.jpg" width="400"/>
+      <div class="p-2">
+       <h4 class="text-sm font-semibold truncate">
+        City Lights
+       </h4>
+       <p class="text-xs text-gray-400">
+        Drama, Romance
+       </p>
+      </div>
+     </div>
+     <div class="cursor-pointer rounded-lg overflow-hidden shadow-lg bg-gray-800">
+      <img alt="Web series 3 poster showing a fiery explosion with a hero running away in the foreground" class="w-full h-40 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/e290bf63-3e06-415e-e576-f6e5c9826716.jpg" width="400"/>
+      <div class="p-2">
+       <h4 class="text-sm font-semibold truncate">
+        Firestorm
+       </h4>
+       <p class="text-xs text-gray-400">
+        Action, Thriller
+       </p>
+      </div>
+     </div>
+     <div class="cursor-pointer rounded-lg overflow-hidden shadow-lg bg-gray-800">
+      <img alt="Web series 4 poster showing a fantasy forest with glowing plants and a mysterious figure" class="w-full h-40 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/5594c775-af44-4921-079d-ae5ac8e71806.jpg" width="400"/>
+      <div class="p-2">
+       <h4 class="text-sm font-semibold truncate">
+        Enchanted Realm
+       </h4>
+       <p class="text-xs text-gray-400">
+        Fantasy, Adventure
+       </p>
+      </div>
+     </div>
+     <div class="cursor-pointer rounded-lg overflow-hidden shadow-lg bg-gray-800">
+      <img alt="Web series 5 poster showing a cyberpunk city with neon signs and a lone hacker in a hoodie" class="w-full h-40 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/9f5cbe1f-9751-43c6-692f-fc12ff7b7f38.jpg" width="400"/>
+      <div class="p-2">
+       <h4 class="text-sm font-semibold truncate">
+        Cyber Nexus
+       </h4>
+       <p class="text-xs text-gray-400">
+        Sci-Fi, Thriller
+       </p>
+      </div>
+     </div>
+     <div class="cursor-pointer rounded-lg overflow-hidden shadow-lg bg-gray-800">
+      <img alt="Web series 6 poster showing a group of friends laughing around a campfire at night in the woods" class="w-full h-40 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/46fb387f-d335-4208-f9f1-ac4e171b492a.jpg" width="400"/>
+      <div class="p-2">
+       <h4 class="text-sm font-semibold truncate">
+        Campfire Tales
+       </h4>
+       <p class="text-xs text-gray-400">
+        Horror, Mystery
+       </p>
+      </div>
+     </div>
+     <div class="cursor-pointer rounded-lg overflow-hidden shadow-lg bg-gray-800">
+      <img alt="Web series 7 poster showing a young couple riding a motorcycle on a coastal road at sunset" class="w-full h-40 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/680101fe-3568-4078-135f-e907c9cb5de2.jpg" width="400"/>
+      <div class="p-2">
+       <h4 class="text-sm font-semibold truncate">
+        Ride With Me
+       </h4>
+       <p class="text-xs text-gray-400">
+        Romance, Drama
+       </p>
+      </div>
+     </div>
+     <div class="cursor-pointer rounded-lg overflow-hidden shadow-lg bg-gray-800">
+      <img alt="Web series 8 poster showing a stand-up comedian on stage with a microphone and laughing audience" class="w-full h-40 object-cover" height="225" src="https://storage.googleapis.com/a1aa/image/dfd92d67-7b5c-4423-0b51-d2f77176b87b.jpg" width="400"/>
+      <div class="p-2">
+       <h4 class="text-sm font-semibold truncate">
+        Laugh Out Loud
+       </h4>
+       <p class="text-xs text-gray-400">
+        Comedy
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Kids Section -->
+   <section class="mt-8 px-4 mb-12">
+    <h3 class="text-xl font-semibold mb-3">
+     Kids
+    </h3>
+    <div class="flex space-x-4 overflow-x-auto no-scrollbar pb-2">
+     <div class="flex-shrink-0 w-40 sm:w-48 md:w-52 cursor-pointer rounded-lg overflow-hidden shadow-lg bg-gray-800">
+      <img alt="Kids show 1 poster showing colorful animated characters playing in a magical forest" class="w-full h-24 sm:h-28 md:h-32 object-cover" height="180" src="https://storage.googleapis.com/a1aa/image/8f9736a1-a937-4a6b-04bc-0afe033358d7.jpg" width="320"/>
+      <div class="p-2">
+       <h4 class="text-sm font-semibold truncate">
+        Magic Forest Friends
+       </h4>
+       <p class="text-xs text-gray-400">
+        Animation, Adventure
+       </p>
+      </div>
+     </div>
+     <div class="flex-shrink-0 w-40 sm:w-48 md:w-52 cursor-pointer rounded-lg overflow-hidden shadow-lg bg-gray-800">
+      <img alt="Kids show 2 poster showing a cheerful cartoon robot and children exploring space" class="w-full h-24 sm:h-28 md:h-32 object-cover" height="180" src="https://storage.googleapis.com/a1aa/image/d9f75449-4c57-4741-7dcb-b4eb9ff5fb50.jpg" width="320"/>
+      <div class="p-2">
+       <h4 class="text-sm font-semibold truncate">
+        Space Explorers
+       </h4>
+       <p class="text-xs text-gray-400">
+        Animation, Sci-Fi
+       </p>
+      </div>
+     </div>
+     <div class="flex-shrink-0 w-40 sm:w-48 md:w-52 cursor-pointer rounded-lg overflow-hidden shadow-lg bg-gray-800">
+      <img alt="Kids show 3 poster showing a group of animal friends having a picnic in a sunny meadow" class="w-full h-24 sm:h-28 md:h-32 object-cover" height="180" src="https://storage.googleapis.com/a1aa/image/5c230cea-e582-4485-ed8e-bbeef44a6afe.jpg" width="320"/>
+      <div class="p-2">
+       <h4 class="text-sm font-semibold truncate">
+        Sunny Meadow Adventures
+       </h4>
+       <p class="text-xs text-gray-400">
+        Animation, Family
+       </p>
+      </div>
+     </div>
+     <div class="flex-shrink-0 w-40 sm:w-48 md:w-52 cursor-pointer rounded-lg overflow-hidden shadow-lg bg-gray-800">
+      <img alt="Kids show 4 poster showing a young wizard casting a spell with colorful magic sparks" class="w-full h-24 sm:h-28 md:h-32 object-cover" height="180" src="https://storage.googleapis.com/a1aa/image/3f838559-7e4e-45d4-d151-653082102170.jpg" width="320"/>
+      <div class="p-2">
+       <h4 class="text-sm font-semibold truncate">
+        Wizard Wonders
+       </h4>
+       <p class="text-xs text-gray-400">
+        Animation, Fantasy
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <!-- Bottom Navigation -->
+  <nav class="fixed bottom-0 left-0 right-0 bg-gray-900 border-t border-gray-700 flex justify-around items-center py-2 text-gray-400 text-xs sm:text-sm">
+   <button class="flex flex-col items-center space-y-1 text-white">
+    <i class="fas fa-home text-xl">
+    </i>
+    <span>
+     Home
+    </span>
+   </button>
+   <button class="flex flex-col items-center space-y-1 hover:text-white transition">
+    <i class="fas fa-film text-xl">
+    </i>
+    <span>
+     Movies
+    </span>
+   </button>
+   <button class="flex flex-col items-center space-y-1 hover:text-white transition">
+    <i class="fas fa-tv text-xl">
+    </i>
+    <span>
+     TV Shows
+    </span>
+   </button>
+   <button class="flex flex-col items-center space-y-1 hover:text-white transition">
+    <i class="fas fa-th-large text-xl">
+    </i>
+    <span>
+     Categories
+    </span>
+   </button>
+   <button class="flex flex-col items-center space-y-1 hover:text-white transition">
+    <i class="fas fa-user-circle text-xl">
+    </i>
+    <span>
+     Profile
+    </span>
+   </button>
+  </nav>
+ </body>
+</html>
