@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TV Shows Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="flex items-center justify-between px-4 py-3 bg-gray-900 fixed top-0 left-0 right-0 z-50 border-b border-gray-700">
+    <div class="flex items-center space-x-4">
+      <img src="https://i.pinimg.com/originals/05/ae/11/05ae111dc506a36ca09d52deaabf5a52.jpg" alt="Logo" class="h-10 w-auto">
+      <nav class="hidden md:flex space-x-6 font-semibold text-gray-300">
+        <a href="#" class="hover:text-white">TV Shows</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-16 px-4 mb-20">
+    <h2 class="text-2xl font-bold mb-6">Popular TV Shows</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Bigg Boss -->
+      <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+        <img src="bigboss13.jpg">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Bigg Boss</h3>
+          <p class="text-sm text-gray-400 mb-3">Reality show filled with drama, tasks, and twists.</p>
+          <a href="voatingpage.html" class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded text-sm font-semibold block text-center">Vote Now</a>
+        </div>
+      </div>
+
+      <!-- Khatron Ke Khiladi -->
+      <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+        <img src="kkk13.jpg">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Khatron Ke Khiladi</h3>
+          <p class="text-sm text-gray-400">Celebrities face their worst fears in thrilling stunts.</p>
+        </div>
+      </div>
+
+      <!-- MTV Ace of Space -->
+      <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+        <img src="MTV-Ace-of-Space.jpg"alt="MTV Ace of Space" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">MTV Ace of Space</h3>
+          <p class="text-sm text-gray-400">A unique dating experience — in complete darkness.</p>
+        </div>
+      </div>
+
+      <!-- MTV Roadies -->
+      <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+        <img src="rodies .jpg" alt="MTV Roadies" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">MTV Roadies</h3>
+          <p class="text-sm text-gray-400">A road adventure packed with tasks, politics, and grit.</p>
+        </div>
+      </div>
+
+      <!-- Splitsvilla 10 -->
+      <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+        <img src="splitsvilla10 copy.jpg" alt="Splitsvilla 10" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Splitsvilla 10</h3>
+          <p class="text-sm text-gray-400">Where love meets competition and drama rules the villa.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bottom Nav -->
+  <nav class="fixed bottom-0 left-0 right-0 bg-gray-900 border-t border-gray-700 flex justify-around items-center py-2 text-gray-400 text-xs">
+    <button class="flex flex-col items-center text-white">
+      <i class="fas fa-tv text-xl"></i>
+      <span>TV Shows</span>
+    </button>
+    <button class="flex flex-col items-center hover:text-white">
+      <i class="fas fa-user-circle text-xl"></i>
+      <span>Profile</span>
+    </button>
+  </nav>
+</body>
+</html>
+
