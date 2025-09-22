@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Bigg Boss Voting (Final)</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: #fff;
+  }
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+  }
+  #contestants-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .card {
+    background-color: #2c3e50;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .card-body {
+    padding: 15px;
+    text-align: center;
+  }
+  .card-body h2 {
+    margin-bottom: 10px;
+  }
+  .vote-button {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+  }
+  .vote-button:disabled {
+    background: gray;
+    cursor: not-allowed;
+  }
+  /* Overlay effect using :target */
+  .overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    flex-direction: column;
+    text-align: center;
+  }
+  .overlay img {
+    max-width: 80%;
+    max-height: 70%;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(255,255,255,0.7);
+    margin-bottom: 20px;
+  }
+  .overlay:target {
+    display: flex;
+  }
+  .thanks {
+    font-size: 24px;
+    font-weight: bold;
+    animation: glitter 1.5s ease-in-out infinite alternate;
+  }
+  @keyframes glitter {
+    from { color: #fff; text-shadow: 0 0 10px #f1c40f; }
+    to { color: #f1c40f; text-shadow: 0 0 20px #fff; }
+  }
+  .close-btn {
+    margin-top: 20px;
+    display: inline-block;
+    background: #e74c3c;
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Bigg Boss Voting Page</h1>
+</header>
+
+<!-- Contestants -->
+<main id="contestants-container">
+
+  <!-- Contestant A -->
+  <div class="card">
+    <img src="Lopamudra_Raut.jpg" alt="Contestant A">
+    <div class="card-body">
+      <h2>Contestant A</h2>
+      <button class="vote-button" data-target="voteA">Vote</button>
+    </div>
+  </div>
+
+  <!-- Contestant B -->
+  <div class="card">
+    <img src="hina_khan.jpg" alt="Contestant B">
+    <div class="card-body">
+      <h2>Contestant B</h2>
+      <button class="vote-button" data-target="voteB">Vote</button>
+    </div>
+  </div>
+
+  <!-- Contestant C -->
+  <div class="card">
+    <img src="shiv.jpg" alt="Contestant C">
+    <div class="card-body">
+      <h2>Contestant C</h2>
+      <button class="vote-button" data-target="voteC">Vote</button>
+    </div>
+  </div>
+
+  <!-- Contestant D -->
+  <div class="card">
+    <img src="Hindi14_Sidharth_Large.jpg" alt="Contestant D">
+    <div class="card-body">
+      <h2>Contestant D</h2>
+      <button class="vote-button" data-target="voteD">Vote</button>
+    </div>
+  </div>
+
+</main>
+
+<!-- Overlays -->
+<div id="voteA" class="overlay">
+  <img src="Lopamudra_Raut.jpg" alt="Contestant A">
+  <div class="thanks">✨ Thanks for voting! ✨</div>
+  <a href="#" class="close-btn">Close</a>
+</div>
+
+<div id="voteB" class="overlay">
+  <img src="hina_khan.jpg" alt="Contestant B">
+  <div class="thanks">✨ Thanks for voting! ✨</div>
+  <a href="#" class="close-btn">Close</a>
+</div>
+
+<div id="voteC" class="overlay">
+  <img src="shiv.jpg" alt="Contestant C">
+  <div class="thanks">✨ Thanks for voting! ✨</div>
+  <a href="#" class="close-btn">Close</a>
+</div>
+
+<div id="voteD" class="overlay">
+  <img src="Hindi14_Sidharth_Large.jpg" alt="Contestant D">
+  <div class="thanks">✨ Thanks for voting! ✨</div>
+  <a href="#" class="close-btn">Close</a>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll(".vote-button");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const target = button.getAttribute("data-target");
+      window.location.hash = target;
+
+      // disable all buttons after first vote
+      buttons.forEach(btn => {
+        btn.disabled = true;
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
